@@ -16,30 +16,51 @@ A lightweight, user-friendly reminder application designed to help individuals a
 
 ## 🚀 Getting Started
 
-*(Instructions will be updated as the tech stack and implementation progress)*
-
 ### Prerequisites
 
-- Git
-- [Node.js / Python / your target runtime environment]
+- [Git](https://git-scm.com/)
+- [Node.js (v18+)](https://nodejs.org/) & `npm`
+- [Docker & Docker Compose](https://www.docker.com/)
 
-### Installation
+---
 
-1. Clone the repository:
+### Running the Frontend (Local Development)
+
+1. Navigate to the frontend directory:
    ```bash
-   git clone https://github.com/<your-username>/reminder-application.git
-   cd reminder-application
+   cd frontend
    ```
 
-2. Install dependencies:
+2. Copy the sample environment file:
    ```bash
-   # Example: npm install / pip install -r requirements.txt
+   cp .env.example .env
    ```
 
-3. Run the application:
+3. Install dependencies:
    ```bash
-   # Example: npm start / python main.py
+   npm install
    ```
+
+4. Start the Vite development server:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+### Running via Docker Compose
+
+To launch the frontend with live hot-reloading in Docker:
+
+```bash
+docker compose up --build frontend
+```
+
+To stop the container:
+```bash
+docker compose down
+```
 
 ---
 
